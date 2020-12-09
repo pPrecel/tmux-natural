@@ -1,4 +1,4 @@
-# natural-tmux
+# tmux-natural
 Custom tmux status bar
 
 ![](natural-tmux.png)
