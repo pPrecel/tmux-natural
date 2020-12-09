@@ -104,7 +104,7 @@ os-helpers::get_linux_distro() {
 os-helpers::set_os_icon() {
     name=$(uname -s)
     case $name in
-        Darwin)   
+        "Darwin"* | "iPhone OS"*)   
             os_icon='#[fg=black]'
         ;;
 
@@ -176,6 +176,10 @@ os-helpers::set_os_icon() {
                 os_icon='#[fg=black]'
             ;;
         esac
+        ;;
+
+        "Android"* | "android"*)
+            os_icon='#[fg=black]'
         ;;
 
         *BSD|DragonFly|Bitrig)
