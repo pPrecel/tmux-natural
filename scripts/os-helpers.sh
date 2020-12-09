@@ -191,7 +191,7 @@ os-helpers::set_os_icon() {
         ;;
 
         *)
-            os_icon='#[fg=black]'
+            os_icon='#[fg=black]'
         ;;
     esac
 }
