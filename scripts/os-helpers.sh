@@ -105,81 +105,84 @@ os-helpers::set_os_icon() {
     name=$(uname -s)
     case $name in
         "Darwin"* | "iPhone OS"*)   
-            os_icon='#[fg=black]'
+            os_icon='#[fg=#282a36]'
         ;;
 
         Linux|GNU*)
         os-helpers::get_linux_distro
 
         case $distro in
+            "Endeavour"* | "endeavour"*)
+                os_icon='#[fg=#282a36]'
+            ;;
             "Redhat"* | "Red Hat"* | "rhel"*)
                 os_icon='#[fg=red]'
             ;;
             "Ubuntu"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Arch"*)
                 os_icon='#[fg=blue]'
             ;;
             "CentOS"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Container Linux by CoreOS"* | "Container_Linux"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Debian"* | "debian"*)
                 os_icon='#[fg=red]'
             ;;
             "Elementary"* | "elementary_small"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Fedora"* | "RFRemix"* | "fedora"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Gentoo"* | "gentoo"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Linux Mint Old"* | "linuxmind"* | "LinuxMintOld"* | "mint_old"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "mageia"* | "Mageia"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Mandriva"* | "OpenMandriva"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Manjaro"* | "manjaro"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "NixOS"* | "nixos"*)
                 os_icon='#[fg=blue]'
             ;;
             "openSUSE"* | "open SUSE"* | "SUSE"* | "opensuse_small" | "suse_small"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Raspbian"*)
                 os_icon='#[fg=red]'
             ;;
             "Sabayon"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Slackware"* | "slackware"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             "Alpine"* | "alpine"*)
                 os_icon='#[fg=blue]'
             ;;
             "AOSC"*)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
             *)
-                os_icon='#[fg=black]'
+                os_icon='#[fg=#282a36]'
             ;;
         esac
         ;;
 
         "Android"* | "android"*)
-            os_icon='#[fg=black]'
+            os_icon='#[fg=#282a36]'
         ;;
 
         *BSD|DragonFly|Bitrig)
@@ -191,7 +194,7 @@ os-helpers::set_os_icon() {
         ;;
 
         *)
-            os_icon='#[fg=black]'
+            os_icon='#[fg=#282a36]'
         ;;
     esac
 }
